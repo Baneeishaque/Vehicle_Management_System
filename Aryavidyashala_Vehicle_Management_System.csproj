@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB2EE4A6-B35A-4717-BDE5-B9BA62E3364D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aryavidyashala_Vehicle_Management_System</RootNamespace>
+    <AssemblyName>Aryavidyashala_Vehicle_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XPanderControl">
+      <HintPath>.\XPanderControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About_Us.designer.cs">
+      <DependentUpon>About_Us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign_Trip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_Trip.Designer.cs">
+      <DependentUpon>Assign_Trip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_Addition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank_Addition.Designer.cs">
+      <DependentUpon>Bank_Addition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_Pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank_Pay.Designer.cs">
+      <DependentUpon>Bank_Pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_Pay_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank_Pay_Report.Designer.cs">
+      <DependentUpon>Bank_Pay_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Batha_Assign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Batha_Assign.Designer.cs">
+      <DependentUpon>Batha_Assign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Batha_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Batha_Report.designer.cs">
+      <DependentUpon>Batha_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bunks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bunks.Designer.cs">
+      <DependentUpon>Bunks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common_Tasks.cs" />
+    <Compile Include="DBhandler.cs" />
+    <Compile Include="Employee Addition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Addition.Designer.cs">
+      <DependentUpon>Employee Addition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Manipulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Manipulation.Designer.cs">
+      <DependentUpon>Employee Manipulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Report.Designer.cs">
+      <DependentUpon>Employee_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hair_dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hair_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Print_Hair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print_Hair.Designer.cs">
+      <DependentUpon>Print_Hair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print_Hair_Over.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print_Hair_Over.Designer.cs">
+      <DependentUpon>Print_Hair_Over.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hair.Designer.cs">
+      <DependentUpon>Hair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insurance_Reciept_Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurance_Reciept_Input.Designer.cs">
+      <DependentUpon>Insurance_Reciept_Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License_Renew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License_Renew.Designer.cs">
+      <DependentUpon>License_Renew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lisence_Renew_Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lisence_Renew_Input.Designer.cs">
+      <DependentUpon>Lisence_Renew_Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintanance_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintanance_Registration.Designer.cs">
+      <DependentUpon>Maintanance_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notifications.Designer.cs">
+      <DependentUpon>Notifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oil_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oil_Registration.Designer.cs">
+      <DependentUpon>Oil_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Petrol_Bank_Manipulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Petrol_Bank_Manipulation.Designer.cs">
+      <DependentUpon>Petrol_Bank_Manipulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessIcon.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Refill_Bill_Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Refill_Bill_Input.Designer.cs">
+      <DependentUpon>Refill_Bill_Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Handler.cs" />
+    <Compile Include="Sell_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sell_Report.Designer.cs">
+      <DependentUpon>Sell_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test_Form.Designer.cs">
+      <DependentUpon>Test_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trips_Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trips_Summary.Designer.cs">
+      <DependentUpon>Trips_Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trip_Completion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trip_Completion.Designer.cs">
+      <DependentUpon>Trip_Completion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trip_Manipulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trip_Manipulation.Designer.cs">
+      <DependentUpon>Trip_Manipulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_Report.Designer.cs">
+      <DependentUpon>Vehicle_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Sell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_Sell.Designer.cs">
+      <DependentUpon>Vehicle_Sell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_Summary.Designer.cs">
+      <DependentUpon>Vehicle_Summary.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About_Us.resx">
+      <DependentUpon>About_Us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign_Trip.resx">
+      <DependentUpon>Assign_Trip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank_Addition.resx">
+      <DependentUpon>Bank_Addition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank_Pay.resx">
+      <DependentUpon>Bank_Pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank_Pay_Report.resx">
+      <DependentUpon>Bank_Pay_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Batha_Assign.resx">
+      <DependentUpon>Batha_Assign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Batha_Report.resx">
+      <DependentUpon>Batha_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bunks.resx">
+      <DependentUpon>Bunks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hair_Report_wover.rdlc" />
+    <EmbeddedResource Include="Employee Addition.resx">
+      <DependentUpon>Employee Addition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Manipulation.resx">
+      <DependentUpon>Employee Manipulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Report.resx">
+      <DependentUpon>Employee_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hair_Report.rdlc" />
+    <EmbeddedResource Include="Print_Hair.resx">
+      <DependentUpon>Print_Hair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print_Hair_Over.resx">
+      <DependentUpon>Print_Hair_Over.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hair.resx">
+      <DependentUpon>Hair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurance_Reciept_Input.resx">
+      <DependentUpon>Insurance_Reciept_Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License_Renew.resx">
+      <DependentUpon>License_Renew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lisence_Renew_Input.resx">
+      <DependentUpon>Lisence_Renew_Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintanance_Registration.resx">
+      <DependentUpon>Maintanance_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notifications.resx">
+      <DependentUpon>Notifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oil_Registration.resx">
+      <DependentUpon>Oil_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Petrol_Bank_Manipulation.resx">
+      <DependentUpon>Petrol_Bank_Manipulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Refill_Bill_Input.resx">
+      <DependentUpon>Refill_Bill_Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sell_Report.resx">
+      <DependentUpon>Sell_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tax_Reciept_Input.resx">
+      <DependentUpon>Tax_Reciept_Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test_Form.resx">
+      <DependentUpon>Test_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trips.resx">
+      <DependentUpon>Trips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trips_Summary.resx">
+      <DependentUpon>Trips_Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trip_Completion.resx">
+      <DependentUpon>Trip_Completion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trip_Manipulation.resx">
+      <DependentUpon>Trip_Manipulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle_Addition.resx">
+      <DependentUpon>Vehicle_Addition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle_Maintanance.resx">
+      <DependentUpon>Vehicle_Maintanance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle_Manipulation.resx">
+      <DependentUpon>Vehicle_Manipulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle_Report.resx">
+      <DependentUpon>Vehicle_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle_Sell.resx">
+      <DependentUpon>Vehicle_Sell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle_Summary.resx">
+      <DependentUpon>Vehicle_Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hair_dataset.xsc">
+      <DependentUpon>Hair_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Hair_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hair_dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Hair_dataset.xss">
+      <DependentUpon>Hair_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tax_Reciept_Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tax_Reciept_Input.Designer.cs">
+      <DependentUpon>Tax_Reciept_Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trips.Designer.cs">
+      <DependentUpon>Trips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Addition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_Addition.Designer.cs">
+      <DependentUpon>Vehicle_Addition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Maintanance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_Maintanance.Designer.cs">
+      <DependentUpon>Vehicle_Maintanance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle_Manipulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_Manipulation.Designer.cs">
+      <DependentUpon>Vehicle_Manipulation.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vsta.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
